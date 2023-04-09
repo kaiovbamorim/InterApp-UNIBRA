@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div color="primary" class="center">
+    <div class="back">
+      <ion-icon (click)="backLogin()" color="white" name="arrow-back-outline"></ion-icon>
+      <ion-card-title>Crie sua conta</ion-card-title>
+    </div>
+    <figure>
+      <img src="../../assets/recicla.png" />
+    </figure>
+    <form>
+      <div class="container-input">
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="email" label="Nome completo" labelPlacement="floating" name="nomeCompleto"
+            required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="email" label="E-mail" labelPlacement="floating" name="email" required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input [type]="passwordType" label="Senha" labelPlacement="floating" name="senha" required></ion-input>
+          <ion-icon name="eye" (click)="togglePassword()"
+            [color]="passwordShown === false ? 'gray' : 'dark'"></ion-icon>
+        </ion-item>
+      </div>
+      <ion-button color="secondary" expand="block">Registre-se</ion-button>
+    </form>
+    <div class="login-account">
+      <p>Já possui conta? <a (click)="backLogin()">Entre aqui</a></p>
+    </div>
+  </div>
+</ion-content>

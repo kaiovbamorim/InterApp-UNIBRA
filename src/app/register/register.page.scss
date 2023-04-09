@@ -1,0 +1,71 @@
+.center {
+    padding: 30px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+}
+.back {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.center ion-icon:first-child {
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+}
+ion-content {
+    --keyboard-offset: 0 !important;
+}
+ion-card-title {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+figure {
+    text-align: center;
+    margin: 20px;
+}
+form {margin: 20px 0;}
+figure img {
+    width: 120px;
+}
+
+.container-input ion-item {
+    border-radius: 20px;
+}
+
+ion-input {
+    width: 100%;
+}
+
+ion-button {
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    --border-radius: 20px;
+}
+
+.login-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+.login-account p {
+    color: white;
+    margin: 0;
+}
+
+.login-account a {
+    color: var(--ion-color-secondary);
+}
