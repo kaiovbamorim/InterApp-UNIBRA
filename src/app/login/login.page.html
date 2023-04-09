@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div color="primary" class="center">
+    <ion-card-title>INTER APP</ion-card-title>
+    <figure>
+      <img src="../../assets/recicla.png" />
+    </figure>
+    <form>
+      <div class="container-input">
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="email" label="E-mail" labelPlacement="floating" name="email" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input [type]="passwordType" label="Senha" labelPlacement="floating" name="senha" [(ngModel)]="senha" required></ion-input>
+          <ion-icon (click)="togglePassword()" name="eye" [color]="passwordShown === false ? 'gray' : 'dark'"></ion-icon>
+        </ion-item>
+      </div>
+      <ion-button (click)="login()" color="secondary" expand="block">Login</ion-button>
+    </form>
+    <div class="password-recovery">
+      <a (click)="newPassword()">Esqueceu a senha?</a>
+    </div>
+    <div class="create-account">
+      <p>Não possui conta? <a (click)="register()">Registre-se</a></p>
+    </div>
+  </div>
+</ion-content>
