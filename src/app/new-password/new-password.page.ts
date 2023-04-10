@@ -17,7 +17,7 @@ export class NewPasswordPage implements OnInit {
 
   ngOnInit() {
   }
-  backRegister(){
-    this.route.navigateByUrl('/register')
+  backLogin(){
+    this.route.navigateByUrl('/login')
   }
 }
