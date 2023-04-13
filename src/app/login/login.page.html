@@ -1,6 +1,6 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" scroll-y="false">
   <div color="primary" class="center">
-    <ion-card-title>INTER APP</ion-card-title>
+    <ion-card-title>EccoPonto</ion-card-title>
     <figure>
       <img src="../../assets/recicla.png" />
     </figure>
@@ -16,11 +16,15 @@
       </div>
       <ion-button (click)="login()" color="secondary" expand="block">Login</ion-button>
     </form>
-    <div class="password-recovery">
-      <a (click)="newPassword()">Esqueceu a senha?</a>
-    </div>
-    <div class="create-account">
-      <p>Não possui conta? <a (click)="register()">Registre-se</a></p>
-    </div>
+
+
+      <div class="password-recovery">
+        <a (click)="newPassword()">Esqueceu a senha?</a>
+      </div>
+
+      <div class="create-account">
+        <p>Não possui conta? <a (click)="register()">Registre-se</a></p>
+      </div>
+
   </div>
 </ion-content>

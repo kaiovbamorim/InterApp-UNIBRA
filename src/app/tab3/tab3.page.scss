@@ -1,25 +1,50 @@
 .center {
-    padding: 30px;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
 }
 .logout {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    color: white;
-    bottom: 50px;
-    right: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  color: white;
+  bottom: 10px;
+  right: 10px;
 }
 
 .logout ion-icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .logout p {
-    margin-left: 6px;
-    font-size: 26px
+  margin-left: 6px;
+  font-size: 26px;
+}
+.bg-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(46, 46, 148, 0.79);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(46, 46, 148, 1);
+  border-radius: 0px 0px 40px 40px;
+}
+.bg-perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.user-text {
+  text-align: center;
+  color: white;
+}
+.user-text h1,
+.user-text p {
+  font-family: "Poppins", sans-serif;
 }

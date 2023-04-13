@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    if(this.email === 'admin@admin.com' && this.senha === 'admin'){
+    if(this.email === '' && this.senha === ''){
       this.route.navigateByUrl('/tabs/tab1');
       this.presentToast('bottom', 'Seja Bem Vindo!', 'success')
     } else {
