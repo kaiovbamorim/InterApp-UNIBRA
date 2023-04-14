@@ -1,6 +1,8 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
+import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +14,7 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   public environmentInjector = inject(EnvironmentInjector);
 
-  constructor() {}
+  constructor() {
+
+  }
 }

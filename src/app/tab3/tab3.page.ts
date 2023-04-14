@@ -18,7 +18,7 @@ export class Tab3Page {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Deseja sair do EccoPonto?',
+      header: 'Deseja desconectar de EccoPonto?',
       buttons: [
         {
           text: 'Sim',

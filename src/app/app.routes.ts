@@ -32,4 +32,5 @@ export const routes: Routes = [
     path: 'new-password',
     loadComponent: () => import('./new-password/new-password.page').then( m => m.NewPasswordPage)
   },
+
 ];

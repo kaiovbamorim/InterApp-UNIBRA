@@ -6,6 +6,7 @@
   background: linear-gradient(-45deg, #23a6d5, #23d5ab);
   animation: gradient 15s ease infinite;
 }
+
 .logout {
   display: flex;
   align-items: center;
@@ -27,12 +28,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(46, 46, 148, 0.79);
-  border-radius: 16px;
+  background: rgba(17, 17, 82, 0.79);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.2px);
-  -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(46, 46, 148, 1);
   border-radius: 0px 0px 40px 40px;
 }
 .bg-perfil img {
@@ -47,4 +44,25 @@
 .user-text h1,
 .user-text p {
   font-family: "Poppins", sans-serif;
+}
+ion-button {
+  box-shadow: none;
+}
+ion-list {
+  border-radius: 30px;
+  margin: 40px 14px;
+  background: #76717130;
+}
+ion-list ion-item {
+  color: white;
+  --ion-background-color: transparent;
+}
+ion-label {
+  display: flex !important;
+  align-items: center;
+
+  ion-icon {
+    margin-left: 6px;
+    font-size: 20px;
+  }
 }
