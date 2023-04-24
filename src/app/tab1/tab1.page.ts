@@ -40,9 +40,9 @@ export class Tab1Page {
 
     console.log(this.data)
 
-    const registro = this.data.records[0];
-const bairro = registro[this.data.fields.findIndex(f => f.id === 'bairro')];
-console.log(bairro);
+//     const registro = this.data.records[0];
+// const bairro = registro[this.data.fields.findIndex(f => f.id === 'bairro')];
+// console.log(bairro);
     const pontosDeColeta = [
       {
         position: new google.maps.LatLng(-8.079229, -34.904414),
