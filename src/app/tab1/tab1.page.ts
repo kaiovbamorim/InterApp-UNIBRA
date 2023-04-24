@@ -6,6 +6,8 @@ import { url } from 'inspector';
 
 declare var google: any;
 
+const dados = require('./assets/database.json');
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -22,6 +24,7 @@ export class Tab1Page {
   map!: any;
 
   ngAfterViewInit() {
+    console.log(dados);
 
     const pontosDeColeta = [
       {
