@@ -25,16 +25,55 @@ export class Tab1Page {
 
     const pontosDeColeta = [
       {
+        position: new google.maps.LatLng(-8.079229, -34.904414),
+        icon: "./assets/marker.png",
+        title:  '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="firstHeading" class="firstHeading">Title</h1>' +
+        '<div id="bodyContent">' +
+        "<p></p>" +
+        "</div>" +
+        "</div>"
+      },
+      {
+        position: new google.maps.LatLng(-8.066962, -34.885139),
+        icon: "./assets/marker.png",
+        title:  '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="firstHeading" class="firstHeading">Title</h1>' +
+        '<div id="bodyContent">' +
+        "<p></p>" +
+        "</div>" +
+        "</div>"
+      },
+      {
         position: new google.maps.LatLng(-8.0540768, -34.8936058),
         icon: "./assets/marker.png",
-        title: "Posto de coleta II"
+        title:  '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="firstHeading" class="firstHeading">Title</h1>' +
+        '<div id="bodyContent">' +
+        "<p></p>" +
+        "</div>" +
+        "</div>"
       },
       {
         position: new google.maps.LatLng(-8.0585985, -34.8789275),
         icon: "./assets/marker.png",
-        title: "Posto de coleta I"
+        title:  '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="firstHeading" class="firstHeading">Title</h1>' +
+        '<div id="bodyContent">' +
+        "<p></p>" +
+        "</div>" +
+        "</div>"
       }
     ]
+
 
     const centralizacao = {lat: -8.0555338, lng: -34.8888516};
 
@@ -46,6 +85,8 @@ export class Tab1Page {
         center: centralizacao,
       }
     );
+
+
 
     const infoWindow = new google.maps.InfoWindow();
     // The marker, positioned at Uluru
