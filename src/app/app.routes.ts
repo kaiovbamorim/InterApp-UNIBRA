@@ -31,6 +31,14 @@ export const routes: Routes = [
   {
     path: 'new-password',
     loadComponent: () => import('./new-password/new-password.page').then( m => m.NewPasswordPage)
+  },  {
+    path: 'sugerir-ponto',
+    loadComponent: () => import('./sugerir-ponto/sugerir-ponto.page').then( m => m.SugerirPontoPage)
   },
+  {
+    path: 'alterar-senha',
+    loadComponent: () => import('./alterar-senha/alterar-senha.page').then( m => m.AlterarSenhaPage)
+  },
+
 
 ];

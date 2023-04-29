@@ -16,6 +16,15 @@ export class Tab3Page {
     private actionSheetCtrl: ActionSheetController
   ) {}
 
+  
+  async sugerirPonto(){
+    this.route.navigate(['/sugerir-ponto'])
+  }
+  async alterarSenha(){
+    this.route.navigate(['/alterar-senha'])
+  }
+
+
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
       header: 'Deseja desconectar de EccoPonto?',

@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div color="primary" class="center">
+    <div class="back">
+      <ion-icon (click)="backPerfil()" color="white" name="arrow-back-outline"></ion-icon>
+      <ion-card-title>Sugerir Ponto</ion-card-title>
+    </div>
+    <figure>
+      <img src="../../assets/recicla.png" />
+    </figure>
+    <form>
+      <div class="container-input">
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="text" label="Bairro" labelPlacement="floating" name="nomeCompleto"
+            required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="text" label="Endereço" labelPlacement="floating" name="email" required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="text" label="Longitude" labelPlacement="floating" name="senha" required></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom" lines="full">
+          <ion-input type="text" label="Latitude" labelPlacement="floating" name="senha" required></ion-input>
+        </ion-item>
+      </div>
+      <ion-button color="secondary" expand="block">Sugerir</ion-button>
+    </form>
+  </div>
+</ion-content>

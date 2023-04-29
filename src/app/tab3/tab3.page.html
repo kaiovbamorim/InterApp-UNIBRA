@@ -1,34 +1,34 @@
 <ion-content [fullscreen]="true">
   <div class="center">
-      <div class="bg-perfil">
-        <figure>
-          <img src="./assets/ronaldinho.jpg" />
-        </figure>
-        <div class="user-text">
-          <h1>NOME COMPLETO</h1>
-          <p>admin@admin.com</p>
-        </div>
+    <div class="bg-perfil">
+      <figure>
+        <img src="./assets/avatar.png" />
+      </figure>
+      <div class="user-text">
+        <h1>NOME COMPLETO</h1>
+        <p>admin@admin.com</p>
       </div>
-      <ion-list lines="none">
-        <ion-item>
-          <ion-label>Pokémon Yellow</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Mega Man X</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>The Legend of Zelda</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Alterar Senha</ion-label>
-        </ion-item>
-        <ion-item (click)="presentActionSheet()">
-          <ion-label>
-            Logout
-            <ion-icon name="log-in-outline" aria-label="Sair"></ion-icon>
-          </ion-label>
-        </ion-item>
-      </ion-list>
+    </div>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label>Curiosidades</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Precisa de ajuda?</ion-label>
+      </ion-item>
+      <ion-item (click)="alterarSenha()">
+        <ion-label>Alterar Senha</ion-label>
+      </ion-item>
+      <ion-item (click)="sugerirPonto()">
+        <ion-label>Sugerir Ponto</ion-label>
+      </ion-item>
+      <ion-item (click)="presentActionSheet()">
+        <ion-label>
+          Logout
+          <ion-icon name="log-in-outline" aria-label="Sair"></ion-icon>
+        </ion-label>
+      </ion-item>
+    </ion-list>
 
 
   </div>
