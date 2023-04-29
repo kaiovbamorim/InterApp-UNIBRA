@@ -32,3 +32,18 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.center {
+    margin: auto;
+    padding: 0 30px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    animation: gradient 15s ease infinite;
+  }
+  ion-content {
+    --keyboard-offset: 0 !important;
+    --background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  }
