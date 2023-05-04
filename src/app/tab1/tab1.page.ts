@@ -55,8 +55,6 @@ export class Tab1Page {
         <div><strong>Bairro</strong>: ${record[2]}</div>
         <div><strong>Endereco</strong>: ${record[3]}, ${record[4]}</div>
         <div><strong>Observacao</strong>: ${record[5]}</div>
-        <div><strong>Latitude</strong>: ${record[6]}</div>
-        <div><strong>Longitude</strong>: ${record[7]}</div>
       `,
           };
           pontosDeColeta.push(pontoDeColeta);
