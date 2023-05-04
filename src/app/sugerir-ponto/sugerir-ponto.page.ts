@@ -18,6 +18,9 @@ export class SugerirPontoPage implements OnInit {
   async backPerfil(){
     this.route.navigateByUrl('/tabs/tab3')
   }
+  async sugestaoAceita(){
+    this.route.navigateByUrl('/sugestao-aceita')
+  }
 
   ngOnInit() {
   }

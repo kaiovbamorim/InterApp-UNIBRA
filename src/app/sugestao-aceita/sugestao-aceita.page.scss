@@ -1,0 +1,48 @@
+.back {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.center ion-icon:first-child {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+ion-content {
+  --keyboard-offset: 0 !important;
+  --keyboard-offset: 0 !important;
+  --background: linear-gradient(-45deg, #1984ab, #13255b);
+
+}
+
+ion-card-title {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+figure {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+figure img {
+  width: 120px;
+}
+.text-email {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+#background-content {
+  background: blue !important;
+}
