@@ -47,3 +47,25 @@
     --keyboard-offset: 0 !important;
     --background: linear-gradient(-45deg, #23a6d5, #23d5ab);
   }
+
+  :root {
+    --ion-color-rose: #1a3c86;
+    --ion-color-rose-rgb: 254, 205, 211;
+    --ion-color-rose-contrast: #ffffff;
+    --ion-color-rose-contrast-rgb: 0, 0, 0;
+    --ion-color-rose-shade: #1a3c86;
+    --ion-color-rose-tint: #005fb8;
+  }
+  
+  .ion-color-rose {
+    --ion-color-base: var(--ion-color-rose);
+    --ion-color-base-rgb: var(--ion-color-rose-rgb);
+    --ion-color-contrast: var(--ion-color-rose-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rose-shade);
+    --ion-color-tint: var(--ion-color-rose-tint);
+  }
+  
+  div[slot='content'] {
+    background: rgba(var(--ion-color-rose-rgb), 0.25);
+  }

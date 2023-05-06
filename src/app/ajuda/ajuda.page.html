@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <div color="primary" class="center">
+    <div class="back" (click)="backPerfil()">
+      <ion-icon color="white" name="arrow-back-outline"></ion-icon>
+      <ion-card-title>Precisa de ajuda?</ion-card-title>
+    </div>
+    <figure>
+      <img src="../../assets/recicla.png" />
+    </figure>
+    <ion-accordion-group expand="inset">
+      <ion-accordion value="primeiro">
+        <ion-item slot="header" color="rose">
+          <ion-label>First Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">First Content</div>
+      </ion-accordion>
+      <ion-accordion value="segundo">
+        <ion-item slot="header" color="rose">
+          <ion-label>Second Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Second Content</div>
+      </ion-accordion>
+      <ion-accordion value="terceiro">
+        <ion-item slot="header" color="rose">
+          <ion-label>Third Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Third Content</div>
+      </ion-accordion>
+      <ion-accordion value="quarto">
+        <ion-item slot="header" color="rose">
+          <ion-label>Third Accordion</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Third Content</div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+</ion-content>

@@ -16,12 +16,15 @@ export class Tab3Page {
     private actionSheetCtrl: ActionSheetController
   ) {}
 
-  
+  async ajuda(){
+    this.route.navigate(['/ajuda']);
+  }
+
   async sugerirPonto(){
-    this.route.navigate(['/sugerir-ponto'])
+    this.route.navigate(['/sugerir-ponto']);
   }
   async alterarSenha(){
-    this.route.navigate(['/alterar-senha'])
+    this.route.navigate(['/alterar-senha']);
   }
 
 

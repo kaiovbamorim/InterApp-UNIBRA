@@ -43,7 +43,12 @@ export const routes: Routes = [
   {
     path: 'sugestao-aceita',
     loadComponent: () => import('./sugestao-aceita/sugestao-aceita.page').then( m => m.SugestaoAceitaPage)
+  },  {
+    path: 'ajuda',
+    loadComponent: () => import('./ajuda/ajuda.page').then( m => m.AjudaPage)
   },
+
+
 
 
 ];
