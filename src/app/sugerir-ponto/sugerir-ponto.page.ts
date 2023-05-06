@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,13 +14,33 @@ import { Router } from '@angular/router';
 })
 export class SugerirPontoPage implements OnInit {
 
-  constructor(private route: Router) { }
+  bairro: string = '';
+  endereco: string = '';
+  longitude: string = '';
+  latitude: string = '';
+
+  constructor(private toastController: ToastController,private route: Router) { }
 
   async backPerfil(){
     this.route.navigateByUrl('/tabs/tab3')
   }
   async sugestaoAceita(){
-    this.route.navigateByUrl('/sugestao-aceita')
+    if((this.bairro && this.endereco && this.longitude && this.latitude) != '' ){
+      this.route.navigateByUrl('/sugestao-aceita')
+    } else {
+      this.presentToast('top', 'Preencha todos os campos!', 'danger')
+    }
+  }
+
+  async presentToast(position: 'top' | 'middle' | 'bottom', texto: string, cor: string) {
+    const toast = await this.toastController.create({
+      message: texto,
+      color: cor,
+      duration: 1500,
+      position: position
+    });
+
+    await toast.present();
   }
 
   ngOnInit() {

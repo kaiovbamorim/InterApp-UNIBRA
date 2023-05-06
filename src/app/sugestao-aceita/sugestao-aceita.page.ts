@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sugestao-aceita',
@@ -12,7 +13,11 @@ import { IonicModule } from '@ionic/angular';
 })
 export class SugestaoAceitaPage implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  async backMap() {
+    this.route.navigateByUrl('/tabs/tab1')
+  }
 
   ngOnInit() {
   }

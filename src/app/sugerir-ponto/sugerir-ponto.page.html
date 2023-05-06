@@ -10,17 +10,17 @@
     <form>
       <div class="container-input">
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Bairro" labelPlacement="floating" name="nomeCompleto"
+          <ion-input type="text" label="Bairro" labelPlacement="floating" name="bairro" [(ngModel)]="bairro"
             required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Endereço" labelPlacement="floating" name="email" required></ion-input>
+          <ion-input type="text" label="Endereço" labelPlacement="floating" name="endereco" [(ngModel)]="endereco" required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Longitude" labelPlacement="floating" name="senha" required></ion-input>
+          <ion-input type="text" label="Longitude" labelPlacement="floating" name="senha" [(ngModel)]="longitude" required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Latitude" labelPlacement="floating" name="senha" required></ion-input>
+          <ion-input type="text" label="Latitude" labelPlacement="floating" name="senha" [(ngModel)]="latitude" required></ion-input>
         </ion-item>
       </div>
       <ion-button (click)="sugestaoAceita()" color="secondary" expand="block">Sugerir</ion-button>

@@ -10,18 +10,18 @@
     <form>
       <div class="container-input">
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="password" label="Senha atual" labelPlacement="floating" name="nomeCompleto"
+          <ion-input type="password" label="Senha atual" labelPlacement="floating" name="senhaAtual" [(ngModel)]="senhaAtual"
             required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="password" label="Nova senha" labelPlacement="floating" name="email" required></ion-input>
+        <ion-input type="password" label="Nova senha" labelPlacement="floating" name="senha1" [(ngModel)]="senha1" required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input label="Nova senha novamente" labelPlacement="floating" name="senha" required></ion-input>
+          <ion-input label="Nova senha novamente" labelPlacement="floating" name="senha2" [(ngModel)]="senha2" required></ion-input>
           <ion-icon name="eye"></ion-icon>
         </ion-item>
       </div>
-      <ion-button color="secondary" expand="block">Alterar Senha</ion-button>
+      <ion-button (click)="alterarSenha()" color="secondary" expand="block">Alterar Senha</ion-button>
     </form>
   </div>
 </ion-content>

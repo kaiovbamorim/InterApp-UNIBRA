@@ -37,11 +37,11 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    if(this.email === '' && this.senha === ''){
+    if(this.email === 'admin@admin.com' && this.senha === 'admin'){
       this.route.navigateByUrl('/tabs/tab1');
-      this.presentToast('bottom', 'Seja Bem Vindo!', 'success')
+      this.presentToast('top', 'Seja Bem Vindo!', 'success')
     } else {
-      this.presentToast('bottom', 'ERRO, E-mail ou senha incorretos!', 'danger')
+      this.presentToast('top', 'E-mail ou senha incorretos!', 'danger')
     }
   }
 
