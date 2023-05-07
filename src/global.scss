@@ -50,8 +50,10 @@ ion-content {
   --background: #ffff00 url('./assets/bg.png') repeat center center / 400px !important;
   background-size: cover;
 }
+.back {margin-bottom: 0 !important;}
 .back ion-icon {
   color: var(--ion-color-primary);
+  margin-bottom: 0 !important;
   cursor: pointer;
 }
 a {

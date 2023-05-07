@@ -25,7 +25,7 @@ export class AlterarSenhaPage implements OnInit {
   }
 
   async alterarSenha() {
-    if (this.senha1 == this.senha2 && this.senhaAtual != '' && this.senhaAtual == 'admin') {
+    if (this.senhaAtual != '' && this.senhaAtual == 'admin') {
       this.presentToast('top', 'Senha alterada com sucesso!', 'success')
       this.route.navigateByUrl('/tabs/tab1')
     } else {
