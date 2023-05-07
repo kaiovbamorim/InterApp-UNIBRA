@@ -33,15 +33,11 @@ export class Tab3Page {
       header: 'Deseja desconectar de EccoPonto?',
       buttons: [
         {
-          text: 'Sim',
+          text: 'Sair',
           role: 'destructive',
           handler: () => {
             this.logout();
           },
-        },
-        {
-          text: 'Não',
-          role: 'Não',
         },
         {
           text: 'Cancelar',
