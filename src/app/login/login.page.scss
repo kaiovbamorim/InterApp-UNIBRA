@@ -26,10 +26,11 @@ p {
 form {
   margin: 20px 0;
 }
+figure {
+  text-align: center;
+}
 
 figure img {
-  text-align: center;
-  margin: 20px;
   width: 180px;
 }
 
@@ -38,11 +39,6 @@ figure img {
   width: 180px !important;
   animation: rotate 10s ease infinite;
 }
-
-.container-input ion-item {
-  border-radius: 15px;
-}
-
 ion-input {
   width: 100%;
 }
