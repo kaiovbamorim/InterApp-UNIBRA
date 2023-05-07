@@ -1,5 +1,6 @@
 .center {
- justify-content: flex-start;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .logout {
@@ -19,39 +20,48 @@
   margin-left: 6px;
   font-size: 26px;
 }
+
 .bg-perfil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(17, 17, 82, 0.79);
+  background: rgba(17, 82, 55, 0.79);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 40px 40px;
 }
+
 .bg-perfil img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+
 .user-text {
   text-align: center;
   color: white;
 }
+
 .user-text h1,
 .user-text p {
   font-family: "Poppins", sans-serif;
 }
+
 ion-button {
   box-shadow: none;
 }
+
 ion-list {
   border-radius: 30px;
   margin: 40px 14px;
-  background: #76717130;
+  padding: 20px 10px;
+  background: rgba(17, 82, 55, 0.79);
 }
+
 ion-list ion-item {
   color: white;
   --ion-background-color: transparent;
 }
+
 ion-label {
   display: flex !important;
   align-items: center;

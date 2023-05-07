@@ -1,12 +1,18 @@
 <ion-content [fullscreen]="true">
   <div color="primary" class="center">
     <div class="back">
-      <ion-icon (click)="backPerfil()" color="white" name="arrow-back-outline"></ion-icon>
+      <ion-icon (click)="backPerfil()" color="primary" name="arrow-back-outline"></ion-icon>
       <ion-card-title>Sugerir Ponto</ion-card-title>
     </div>
     <figure>
-      <img src="../../assets/recicla.png" />
+      <img class="border" src="../../assets/borda-logo.png" />
+      <img class="logo" src="../../assets/logo.png" />
     </figure>
+    <div class="text-sugerir">
+      <p>
+        Forneça seu endereço completo e as coordenadas de longitude e latitude correspondentes.
+      </p>
+    </div>
     <form>
       <div class="container-input">
         <ion-item class="ion-margin-bottom" lines="full">
@@ -14,13 +20,16 @@
             required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Endereço" labelPlacement="floating" name="endereco" [(ngModel)]="endereco" required></ion-input>
+          <ion-input type="text" label="Endereço" labelPlacement="floating" name="endereco" [(ngModel)]="endereco"
+            required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Longitude" labelPlacement="floating" name="senha" [(ngModel)]="longitude" required></ion-input>
+          <ion-input type="text" label="Longitude" labelPlacement="floating" name="senha" [(ngModel)]="longitude"
+            required></ion-input>
         </ion-item>
         <ion-item class="ion-margin-bottom" lines="full">
-          <ion-input type="text" label="Latitude" labelPlacement="floating" name="senha" [(ngModel)]="latitude" required></ion-input>
+          <ion-input type="text" label="Latitude" labelPlacement="floating" name="senha" [(ngModel)]="latitude"
+            required></ion-input>
         </ion-item>
       </div>
       <ion-button (click)="sugestaoAceita()" color="secondary" expand="block">Sugerir</ion-button>

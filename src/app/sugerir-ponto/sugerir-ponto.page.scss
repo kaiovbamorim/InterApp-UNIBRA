@@ -17,7 +17,7 @@
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     text-align: right;
-    color: white;
+    color: var(--ion-color-primary);
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -27,12 +27,30 @@
     margin: 20px;
   }
 
+  .text-sugerir {
+      color: #0e4400;
+      text-align: center;
+      font-size: 18px;
+  }
+
   form {
     margin: 20px 0;
   }
 
   figure img {
-    width: 120px;
+    text-align: center;
+    margin: 20px;
+    width: 180px;
+  }
+
+  .border {
+    position: absolute;
+    width: 180px !important;
+    animation: rotate 10s ease infinite;
+  }
+
+  .container-input ion-item {
+    border-radius: 15px;
   }
 
   .container-input ion-item {
@@ -48,4 +66,14 @@
     font-size: 20px;
     margin-top: 30px;
     --border-radius: 20px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }

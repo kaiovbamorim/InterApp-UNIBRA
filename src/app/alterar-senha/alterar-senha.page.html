@@ -1,11 +1,12 @@
 <ion-content [fullscreen]="true">
   <div color="primary" class="center">
     <div class="back">
-      <ion-icon (click)="backPerfil()" color="white" name="arrow-back-outline"></ion-icon>
+      <ion-icon (click)="backPerfil()" color="primary" name="arrow-back-outline"></ion-icon>
       <ion-card-title>Altere sua senha</ion-card-title>
     </div>
     <figure>
-      <img src="../../assets/recicla.png" />
+      <img class="border" src="../../assets/borda-logo.png"/>
+      <img class="logo" src="../../assets/logo.png" />
     </figure>
     <form>
       <div class="container-input">
@@ -21,7 +22,7 @@
           <ion-icon name="eye"></ion-icon>
         </ion-item>
       </div>
-      <ion-button (click)="alterarSenha()" color="secondary" expand="block">Alterar Senha</ion-button>
+      <ion-button (click)="alterarSenha()" color="primary" expand="block">Alterar Senha</ion-button>
     </form>
   </div>
 </ion-content>

@@ -1,8 +1,8 @@
 <ion-content [fullscreen]="true" scroll-y="false">
   <div color="primary" class="center">
-    <ion-card-title>EccoPonto</ion-card-title>
     <figure>
-      <img src="../../assets/recicla.png" />
+      <img class="border" src="../../assets/borda-logo.png"/>
+      <img class="logo" src="../../assets/logo.png" />
     </figure>
     <form>
       <div class="container-input">
@@ -14,7 +14,7 @@
           <ion-icon (click)="togglePassword()" name="eye" [color]="passwordShown === false ? 'gray' : 'dark'"></ion-icon>
         </ion-item>
       </div>
-      <ion-button (click)="login()" color="secondary" expand="block">Login</ion-button>
+      <ion-button (click)="login()" color="primary" expand="block">Login</ion-button>
     </form>
 
 

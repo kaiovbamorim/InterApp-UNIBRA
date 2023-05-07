@@ -1,36 +1,37 @@
 <ion-content [fullscreen]="true">
   <div color="primary" class="center">
     <div class="back" (click)="backPerfil()">
-      <ion-icon color="white" name="arrow-back-outline"></ion-icon>
+      <ion-icon color="primary" name="arrow-back-outline"></ion-icon>
       <ion-card-title>Precisa de ajuda?</ion-card-title>
     </div>
     <figure>
-      <img src="../../assets/recicla.png" />
+      <img class="border" src="../../assets/borda-logo.png"/>
+      <img class="logo" src="../../assets/logo.png" />
     </figure>
     <ion-accordion-group expand="inset">
       <ion-accordion value="primeiro">
         <ion-item slot="header" color="rose">
-          <ion-label>First Accordion</ion-label>
+          <ion-label> O que fazer se não encontrar um ponto de coleta próximo à minha localização?</ion-label>
         </ion-item>
-        <div class="ion-padding" slot="content">First Content</div>
+        <div class="ion-padding" slot="content">Você pode sugerir um novo ponto de coleta clicando na opção "Sugerir ponto" na tela principal do app. Preencha as informações necessárias sobre o novo ponto de coleta e nossa equipe irá avaliar sua sugestão.</div>
       </ion-accordion>
       <ion-accordion value="segundo">
         <ion-item slot="header" color="rose">
-          <ion-label>Second Accordion</ion-label>
+          <ion-label>Posso descartar qualquer tipo de resíduo nos pontos de coleta?</ion-label>
         </ion-item>
-        <div class="ion-padding" slot="content">Second Content</div>
+        <div class="ion-padding" slot="content">Não. Cada ponto de coleta aceita apenas determinados tipos de resíduos. Verifique as informações sobre cada ponto de coleta no app para saber quais tipos de resíduos são aceitos.</div>
       </ion-accordion>
       <ion-accordion value="terceiro">
         <ion-item slot="header" color="rose">
-          <ion-label>Third Accordion</ion-label>
+          <ion-label>Como faço para descartar resíduos tóxicos ou perigosos?</ion-label>
         </ion-item>
-        <div class="ion-padding" slot="content">Third Content</div>
+        <div class="ion-padding" slot="content">Resíduos tóxicos ou perigosos devem ser descartados em locais específicos, como postos de coleta da prefeitura ou empresas especializadas. Consulte as informações sobre cada ponto de coleta no app para saber quais tipos de resíduos são aceitos.</div>
       </ion-accordion>
       <ion-accordion value="quarto">
         <ion-item slot="header" color="rose">
-          <ion-label>Third Accordion</ion-label>
+          <ion-label>Como posso alterar minha senha de acesso ao app?</ion-label>
         </ion-item>
-        <div class="ion-padding" slot="content">Third Content</div>
+        <div class="ion-padding" slot="content">Na tela de perfil do app, clique na opção "Alterar senha". Preencha os campos solicitados e clique em "Alterar Senha</div>
       </ion-accordion>
     </ion-accordion-group>
   </div>

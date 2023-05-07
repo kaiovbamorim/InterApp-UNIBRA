@@ -8,27 +8,35 @@
   max-width: 500px;
   animation: gradient 15s ease infinite;
 }
-ion-content {
-  --keyboard-offset: 0 !important;
-  --background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+
+// ion-content {
+//   --keyboard-offset: 0 !important;
+//   --background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+// }
+
+a,
+p {
+  color: #0e4400 !important;
 }
-ion-card-title {
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 20px;
+
+p {
+  font-weight: 600;
 }
-figure {
-  text-align: center;
-  margin: 20px;
-}
+
 form {
   margin: 20px 0;
 }
+
 figure img {
-  width: 120px;
+  text-align: center;
+  margin: 20px;
+  width: 180px;
+}
+
+.border {
+  position: absolute;
+  width: 180px !important;
+  animation: rotate 10s ease infinite;
 }
 
 .container-input ion-item {
@@ -72,17 +80,29 @@ ion-button {
 }
 
 .create-account p {
-  color: white;
   margin: 0;
+  font-weight: normal;
 }
 
 .create-account a {
   color: var(--ion-color-secondary);
+  font-weight: 600;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
   height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

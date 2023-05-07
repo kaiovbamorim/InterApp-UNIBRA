@@ -17,7 +17,7 @@ ion-card-title {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   text-align: right;
-  color: white;
+  color: var(--ion-color-primary);
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -27,12 +27,24 @@ figure {
   margin: 20px;
 }
 
-form {
-  margin: 20px 0;
+figure img {
+  width: 180px;
 }
 
-figure img {
-  width: 120px;
+.border {
+  position: absolute;
+  width: 180px !important;
+  animation: rotate 10s ease infinite;
+}
+
+.text-register {
+  color: #0e4400;
+  text-align: center;
+  font-size: 18px;
+}
+
+form {
+  margin: 20px 0;
 }
 
 .container-input ion-item {
@@ -62,10 +74,21 @@ ion-button {
 }
 
 .login-account p {
-  color: white;
+  color: #0e4400;
   margin: 0;
 }
 
 .login-account a {
-  color: var(--ion-color-secondary);
+  color: #0e4400;
+  font-weight: 600;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
