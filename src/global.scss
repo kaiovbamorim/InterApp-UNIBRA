@@ -29,52 +29,70 @@
 /*Font*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
 * {
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .center {
-    margin: auto;
-    padding: 30px;
-    min-height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    max-width: 500px;
-    animation: gradient 15s ease infinite;
-  }
-  ion-content {
-    --keyboard-offset: 0 !important;
-    --background: #ffff00 url('./assets/bg.png') repeat center center / 400px !important;
-    background-size: cover;
-  }
-
-  :root {
-    --ion-color-rose: #69b145;
-    --ion-color-rose-rgb: 254, 205, 211;
-    --ion-color-rose-contrast: #ffffff;
-    --ion-color-rose-contrast-rgb: 0, 0, 0;
-    --ion-color-rose-shade: #69b145;
-    --ion-color-rose-tint: #005fb8;
-  }
-  
-  .ion-color-rose {
-    --ion-color-base: var(--ion-color-rose);
-    --ion-color-base-rgb: var(--ion-color-rose-rgb);
-    --ion-color-contrast: var(--ion-color-rose-contrast);
-    --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
-    --ion-color-shade: var(--ion-color-rose-shade);
-    --ion-color-tint: var(--ion-color-rose-tint);
-  }
-  
-  div[slot='content'] {
-    background: rgba(var(--ion-color-rose-rgb), 0.25);
-  }
-
-  .container-input[_ngcontent-hju-c85] ion-item[_ngcontent-hju-c85] {
-    border-radius: 15px;
-    border: 2px solid #69b145 !important;
+  margin: auto;
+  padding: 30px;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  max-width: 500px;
+  animation: gradient 15s ease infinite;
 }
+
+ion-content {
+  --keyboard-offset: 0 !important;
+  --background: #ffff00 url('./assets/bg.png') repeat center center / 400px !important;
+  background-size: cover;
+}
+.back ion-icon {
+  color: var(--ion-color-primary);
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+ion-card-title {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  color: var(--ion-color-primary);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+:root {
+  --ion-color-rose: #69b145;
+  --ion-color-rose-rgb: 254, 205, 211;
+  --ion-color-rose-contrast: #ffffff;
+  --ion-color-rose-contrast-rgb: 0, 0, 0;
+  --ion-color-rose-shade: #69b145;
+  --ion-color-rose-tint: #005fb8;
+}
+
+.ion-color-rose {
+  --ion-color-base: var(--ion-color-rose);
+  --ion-color-base-rgb: var(--ion-color-rose-rgb);
+  --ion-color-contrast: var(--ion-color-rose-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+  --ion-color-shade: var(--ion-color-rose-shade);
+  --ion-color-tint: var(--ion-color-rose-tint);
+}
+
+div[slot='content'] {
+  background: rgba(var(--ion-color-rose-rgb), 0.25);
+}
+
+.container-input[_ngcontent-hju-c85] ion-item[_ngcontent-hju-c85] {
+  border-radius: 15px;
+  border: 2px solid #69b145 !important;
+}
+
 .container-input ion-item {
   border: 2px solid #69b145 !important;
 }

@@ -16,33 +16,43 @@ ion-content {
 
 }
 
-ion-card-title {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  text-align: right;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
 figure {
   text-align: center;
   margin: 20px;
+}
+
+
+figure img {
+  text-align: center;
+  margin: 20px;
+  width: 180px;
+}
+
+.border {
+  position: absolute;
+  width: 180px !important;
+  animation: rotate 10s ease infinite;
 }
 
 form {
   margin: 20px 0;
 }
 
-figure img {
-  width: 120px;
-}
 .text-email {
-  color: white;
+  color: #0e4400;
   text-align: center;
   font-size: 18px;
 }
 
 #background-content {
   background: blue !important;
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
 }

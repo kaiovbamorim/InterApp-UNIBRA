@@ -1,6 +1,8 @@
 .center {
   justify-content: flex-start;
   padding: 0;
+  padding-bottom: 55px;
+  position: relative !important;
 }
 
 .logout {
@@ -59,7 +61,12 @@ ion-list {
 
 ion-list ion-item {
   color: white;
+  cursor: pointer;
   --ion-background-color: transparent;
+}
+
+ion-list ion-item ion-label {
+  font-family: 'Poppins', sans-serif;
 }
 
 ion-label {
@@ -70,4 +77,14 @@ ion-label {
     margin-left: 6px;
     font-size: 20px;
   }
+}
+
+.versao {
+  display: block;
+  text-align: right !important;
+  position: relative;
+  bottom: 10px;
+  color: #0e4400;
+  font-weight: 600;
+  width: 94%;
 }

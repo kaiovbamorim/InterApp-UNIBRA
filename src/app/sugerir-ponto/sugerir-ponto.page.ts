@@ -19,13 +19,13 @@ export class SugerirPontoPage implements OnInit {
   longitude: string = '';
   latitude: string = '';
 
-  constructor(private toastController: ToastController,private route: Router) { }
+  constructor(private toastController: ToastController, private route: Router) { }
 
-  async backPerfil(){
+  async backPerfil() {
     this.route.navigateByUrl('/tabs/tab3')
   }
-  async sugestaoAceita(){
-    if((this.bairro && this.endereco && this.longitude && this.latitude) != '' ){
+  async sugestaoAceita() {
+    if ((this.bairro && this.endereco && this.longitude && this.latitude) != '') {
       this.route.navigateByUrl('/sugestao-aceita')
     } else {
       this.presentToast('top', 'Preencha todos os campos!', 'danger')
