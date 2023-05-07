@@ -45,7 +45,7 @@ export class RegisterPage implements OnInit {
 
 
     const emailRegex = /^\S+@\S+\.\S+$/;
-    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)[\w\W]{8,256}$/;
+    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)[\w\W]{8,128}$/;
     if (!emailRegex.test(this.email)) {
       this.presentToast('top', 'E-mail ou senha inválido!', 'danger');
       return;
