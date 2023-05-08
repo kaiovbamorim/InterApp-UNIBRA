@@ -25,7 +25,12 @@ export class SugerirPontoPage implements OnInit {
     this.route.navigateByUrl('/tabs/tab3')
   }
   async sugestaoAceita() {
-    if ((this.bairro && this.endereco && this.longitude && this.latitude) != '') {
+    const bairroRegex = /[a-zA-Z]+[0-9]*/;
+
+    if(!bairroRegex.test(this.bairro)){
+      this.presentToast('top', 'Preencha todos os campos corretamente!', 'danger')
+    }
+    if (((this.bairro && this.endereco && this.longitude && this.latitude) != '') && bairroRegex.test(this.bairro)) {
       this.route.navigateByUrl('/sugestao-aceita')
     } else {
       this.presentToast('top', 'Preencha todos os campos!', 'danger')
