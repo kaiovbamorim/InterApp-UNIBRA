@@ -47,7 +47,7 @@
 
 ion-content {
   --keyboard-offset: 0 !important;
-  --background: #ffff00 url('./assets/bg.png') repeat center center / 400px !important;
+  --background: url('./assets/bg.png') repeat center center / 400px !important;
   background-size: cover;
 }
 .back {margin-bottom: 0 !important;}

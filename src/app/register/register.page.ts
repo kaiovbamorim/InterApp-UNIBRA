@@ -60,12 +60,6 @@ export class RegisterPage implements OnInit {
       this.presentToast('top', 'Conta criada com sucesso!', 'success');
       this.route.navigateByUrl('/login');
     }
-    // if ((this.nomeCompleto && this.email && this.senha) != '') {
-    //   this.presentToast('top', 'Conta criada com sucesso!', 'success');
-    //   this.route.navigateByUrl('/login');
-    // } else {
-    //   this.presentToast('top', 'Preencha todos os campos!', 'danger');
-    // }
   }
 
   async presentToast(position: 'top' | 'middle' | 'bottom', texto: string, cor: string) {
